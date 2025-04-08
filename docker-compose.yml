@@ -21,7 +21,7 @@ services:
       timeout: 5s
 
   flask-app:
-    build: umerleghari01/flask-app:v1
+    image: umerleghari01/flask-app:v1
     container_name: flask-app
     environment:
       MYSQL_HOST: mysql
