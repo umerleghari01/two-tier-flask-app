@@ -9,10 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-  show-repository-files:
-    runs-on: ubuntu-latest
-    steps:
       - name: Show the files of the repository
         run: |
           echo "Repository:${{ github.repository }} contains the following files:"
-          find .
+          tree
