@@ -16,4 +16,4 @@ jobs:
       - name: Show the files of the repository
         run: |
           echo "Repository ${{ github.repository }} contains the following files:"
-          tree 
+          find .
